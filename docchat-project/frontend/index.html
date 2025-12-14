@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+      <link rel="stylesheet" href="./assets/css/login.css">
+    
+</head>
+<body>
+
+<div class="container">
+
+    <div class="background-image" id="backgroundBefore">
+        <img src="./assets/img-video/porte-f.png">
+    </div>
+
+    <div class="background-image" id="backgroundAfter">
+        <img src="./assets/img-video/porte-o.png">
+    </div>
+
+    <div class="welcome-screen" id="welcomeScreen">
+        <h1>Bienvenue</h1>
+        <button class="enter-btn" id="enterBtn">ENTRER</button>
+    </div>
+
+    <div class="video-container" id="videoContainer">
+        <video id="doorVideo" src="./assets/img-video/motion2Fast_une_cenimatique_d_une_porte_qui_souvre_automatique_0.mp4"></video>
+    </div>
+
+    <!-- CONNEXION -->
+    <div class="login-form" id="loginForm">
+        <div class="form-container">
+            <h2>Connexion</h2>
+
+            <form id="login">
+                <div class="input-group">
+                    <label>Nom d'utilisateur</label>
+                    <input type="text" id="username" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Mot de passe</label>
+                    <input type="password" id="password" required>
+                </div>
+
+                <button class="submit-btn">Se connecter</button>
+                <button type="button" class="register-btn" id="showRegister">
+                    S'inscrire
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- INSCRIPTION -->
+    <div class="login-form" id="registerForm">
+        <div class="form-container">
+            <h2>Inscription</h2>
+
+            <form id="register">
+                <div class="input-group">
+                    <label>Nom complet</label>
+                    <input type="text" id="regName" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Mot de passe</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Type</label>
+                    <select id="regType" required>
+                        <option value="">-- Choisir --</option>
+                        <option value="patient">Patient</option>
+                        <option value="medecin">Médecin</option>
+                        <option value="pharmacien">Pharmacien</option>
+                    </select>
+                </div>
+
+                <button class="submit-btn">Créer le compte</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script src="./assets/js/login.js"></script>
+</body>
+</html>
+
+
